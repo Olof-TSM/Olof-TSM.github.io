@@ -1,0 +1,133 @@
+/* text and background for title heading*/
+h1 {
+    color: white;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.678);
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* text and background for body paragraphs*/
+body {
+    background-image: url("food_background.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5%;
+}
+
+.center_home {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.center_about {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.center_store {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#container{
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 20px;
+}
+
+.button{
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/* Navigation bar*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+/* formating 3 images in a row*/
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    position: relative;
+    width: 50%;
+    max-width: 350px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;    
+    width: 75%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* When you mouse over the container, fade in the overlay title */
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
